@@ -1,9 +1,21 @@
 import random as r
 try:
-    quostion=int(input("Enter how many quostion you want to answer?: "))
+    quostion=int(input("Enter how many questions you want to answer?: "))
+    if quostion<=0:
+        print("Please enter a valid number")
+        quostion=int(input("Enter how many quostion you want to answer?: "))
+    elif quostion>16:
+        print("The maximum number of quostion is 16")
+        quostion=int(input("Enter how many quostion you want to answer?: "))
 except:
     print("Please enter a valid number")
-    quostion=int(input("Enter how many quostion you want to answer?: "))
+    quostion=int(input("Enter how many questions you want to answer?: "))
+    if quostion<=0:
+        print("Please enter a valid number")
+        quostion=int(input("Enter how many quostions you want to answer?: "))
+    elif quostion>16:
+        print("The maximum number of quostion is 16")
+        quostion=int(input("Enter how many quostions you want to answer?: "))
 
 q1= {'Kazi Nazrul Islam':[1899,1976]}
 q2= {'Golom Mustafa':[1897,1964]}
